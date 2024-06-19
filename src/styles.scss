@@ -9,6 +9,7 @@ $tertiary-color: #335C67;
 $neutral-color: #FFF3B0;
 $neutral-color-light: #F7F7F2;
 $neutral-color-dark: #0C0A08;
+$neutral-color-dark-mid: #585858;
 $neutral-color-mid: #a0a0a0;
 $error-color-light: #9E2A2B;
 $error-color-dark: #540B0E;
@@ -27,6 +28,7 @@ $success-color-dark: #4F772D;
 	--error-color-dark: $error-color-dark;
 	--success-color-light: $success-color-light;
 	--success-color-dark: $success-color-dark;
+	--neutral-color-dark-mid: $neutral-color-dark-mid;
 }
 
 
@@ -43,91 +45,123 @@ body {
 	}
 }
 
-.primary-color {
+.paragraph {
+	color: $neutral-color-dark-mid !important;
+}
+.primary {
 	color: $primary-color !important;
 }
 
-.secondary-color {
+.secondary {
 	color: $secondary-color !important;
 }
 
-.tertiary-color {
+.tertiary {
 	color: $tertiary-color !important;
 }
 
-.neutral-color {
+.neutral {
 	color: $neutral-color !important;
 }
 
-.neutral-color-light {
+.neutral-light {
 	color: $neutral-color-light !important;
 }
 
-.neutral-color-dark {
+.neutral-dark {
 	color: $neutral-color-dark !important;
 }
 
-.neutral-color-mid {
+.neutral-mid {
 	color: $neutral-color-mid !important;
 }
 
-.error-color-light {
+.error-light {
 	color: $error-color-light !important;
 }
 
-.error-color-dark {
+.error-dark {
 	color: $error-color-dark !important;
 }
 
-.success-color-light {
+.success-light {
 	color: $success-color-light !important;
 }
 
-.success-color-dark {
+.success-dark {
 	color: $success-color-dark !important;
 }
 
 
-.bg-primary-color {
+.bg-primary {
 	background-color: $primary-color !important;
 }
 
-.bg-secondary-color {
+.bg-secondary {
 	background-color: $secondary-color !important;
 }
 
-.bg-tertiary-color {
+.bg-tertiary {
 	background-color: $tertiary-color !important;
 }
 
-.bg-neutral-color {
+.bg-neutral {
 	background-color: $neutral-color !important;
 }
 
-.bg-neutral-color-light {
+.bg-neutral-light {
 	background-color: $neutral-color-light !important;
 }
 
-.bg-neutral-color-dark {
+.bg-neutral-dark {
 	background-color: $neutral-color-dark !important;
 }
 
-.bg-neutral-color-mid {
+.bg-neutral-mid {
 	background-color: $neutral-color-mid !important;
 }
 
-.bg-error-color-light {
+.bg-error-light {
 	background-color: $error-color-light !important;
 }
 
-.bg-error-color-dark {
+.bg-error-dark {
 	background-color: $error-color-dark !important;
 }
 
-.bg-success-color-light {
+.bg-success-light {
 	background-color: $success-color-light !important;
 }
 
-.bg-success-color-dark {
+.bg-success-dark {
 	background-color: $success-color-dark !important;
+}
+
+@for $i from 1 through 200 {
+	$base: 2;
+	$value: $base * $i;
+
+	.height-#{$value} {
+		font-size: $value + 0px;
+	}
+
+	.width-#{$value} {
+		width: $value + 0px;
+	}
+
+	.min-width-#{$value} {
+		min-width: $value + 0px;
+	}
+
+	.min-height-#{$value} {
+		min-height: $value + 0px;
+	}
+
+	.max-width-#{$value} {
+		max-width: $value + 0px;
+	}
+
+	.max-height-#{$value} {
+		max-height: $value + 0px;
+	}
 }
