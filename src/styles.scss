@@ -1,1 +1,133 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$primary-color: #606C38;
+$secondary-color: #E09F3E;
+$tertiary-color: #335C67;
+$neutral-color: #FFF3B0;
+$neutral-color-light: #F7F7F2;
+$neutral-color-dark: #0C0A08;
+$neutral-color-mid: #a0a0a0;
+$error-color-light: #9E2A2B;
+$error-color-dark: #540B0E;
+$success-color-light: #90A955;
+$success-color-dark: #4F772D;
+
+:root {
+	--primary-color: $primary-color;
+	--secondary-color: $secondary-color;
+	--tertiary-color: $tertiary-color;
+	--neutral-color: $neutral-color;
+	--neutral-color-light: $neutral-color-light;
+	--neutral-color-dark: $neutral-color-dark;
+	--neutral-color-mid: $neutral-color-mid;
+	--error-color-light: $error-color-light;
+	--error-color-dark: $error-color-dark;
+	--success-color-light: $success-color-light;
+	--success-color-dark: $success-color-dark;
+}
+
+
+body {
+	font-family: "Quattrocento Sans", sans-serif;
+	color: $neutral-color-dark;
+
+
+	h1,
+	h2,
+	h3,
+	h4 {
+		font-family: "Quattrocento", serif;
+	}
+}
+
+.primary-color {
+	color: $primary-color !important;
+}
+
+.secondary-color {
+	color: $secondary-color !important;
+}
+
+.tertiary-color {
+	color: $tertiary-color !important;
+}
+
+.neutral-color {
+	color: $neutral-color !important;
+}
+
+.neutral-color-light {
+	color: $neutral-color-light !important;
+}
+
+.neutral-color-dark {
+	color: $neutral-color-dark !important;
+}
+
+.neutral-color-mid {
+	color: $neutral-color-mid !important;
+}
+
+.error-color-light {
+	color: $error-color-light !important;
+}
+
+.error-color-dark {
+	color: $error-color-dark !important;
+}
+
+.success-color-light {
+	color: $success-color-light !important;
+}
+
+.success-color-dark {
+	color: $success-color-dark !important;
+}
+
+
+.bg-primary-color {
+	background-color: $primary-color !important;
+}
+
+.bg-secondary-color {
+	background-color: $secondary-color !important;
+}
+
+.bg-tertiary-color {
+	background-color: $tertiary-color !important;
+}
+
+.bg-neutral-color {
+	background-color: $neutral-color !important;
+}
+
+.bg-neutral-color-light {
+	background-color: $neutral-color-light !important;
+}
+
+.bg-neutral-color-dark {
+	background-color: $neutral-color-dark !important;
+}
+
+.bg-neutral-color-mid {
+	background-color: $neutral-color-mid !important;
+}
+
+.bg-error-color-light {
+	background-color: $error-color-light !important;
+}
+
+.bg-error-color-dark {
+	background-color: $error-color-dark !important;
+}
+
+.bg-success-color-light {
+	background-color: $success-color-light !important;
+}
+
+.bg-success-color-dark {
+	background-color: $success-color-dark !important;
+}
